@@ -20,22 +20,24 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
 
-    background-color: lightgrey;
-    opacity: 0.6;
+    background-color: rgba(211,211,211,0.6);
     padding: 2em;
     border-radius: 10px;
     border: 1px solid black;
+    min-width: 30vw;
 }
 
 #menu > * {
     cursor: pointer;
-    background-color: gray;
+    background-color: rgba(211,211,211,1);
     padding: 1em;
+    margin: 1em;
     border-radius: 10px;
     border: 1px solid black;
+    text-align: center;
 }
 
 #menu > *:hover {
-    transition: opacity .1s linear;
-    opacity: 0.6;
+    transition: background-color .1s linear;
+    background-color: rgba(211,211,211,0.4);
 }
