@@ -3,27 +3,48 @@
     margin: 0;
 }
 
+:root {
+    --transparent-background: rgba(211,211,211,0.6);
+}
+
 body {
     overflow-x: auto;
     overflow-y: hidden;
+    background-color: rgb(169, 169, 169);
 }
 
 #world-map {
     height: 100vh;
+    width: 100vw;
     display: block;
     margin: auto;
 }
 
-#menu {
+#world-map g > rect {
+    cursor: pointer;
+}
+
+#world-map g > text {
+    pointer-events: none;
+}
+
+#world-map #tippingPoints {
+    visibility: hidden;
+}
+
+.centered-card-container {
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 
-    background-color: rgba(211,211,211,0.6);
+    background-color: var(--transparent-background);
     padding: 2em;
-    border-radius: 10px;
-    border: 1px solid black;
+    border-radius: 40px;
+    border: 1px solid rgb(187, 187, 187);
+}
+
+#menu {
     min-width: 30vw;
 }
 
@@ -33,11 +54,69 @@ body {
     padding: 1em;
     margin: 1em;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(187, 187, 187);
     text-align: center;
 }
 
 #menu > *:hover {
+    transition: background-color .1s linear;
+    background-color: rgba(211,211,211,0.4);
+}
+
+#question-container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    
+    background-color: var(--transparent-background);
+}
+
+.scale-out-from-center {
+    will-change: transform;
+    transition: transform 1s ease-in-out;
+    transform: translate(-50%, -50%) scale(1)!important;
+}
+
+.fade-out {
+    transition: opacity 1s ease-out;
+    opacity: 0;
+}
+
+#question-container .tippingPoint {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#question-container .top-row {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+#question-container .top-row img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+#question-container .top-row #question {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    padding: 0 3rem 0 3rem;
+}
+
+#question-container .bottom-row .answer {
+    cursor: pointer;
+    background-color: rgba(211,211,211,1);
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid rgb(187, 187, 187);
+}
+
+#question-container .bottom-row .answer:hover {
     transition: background-color .1s linear;
     background-color: rgba(211,211,211,0.4);
 }

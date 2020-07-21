@@ -513,7 +513,3 @@ let tippingPoints = [
         ]
     },
 ];
-
-$(document).ready(function(){
-    window.scrollTo(($(document).width()-$(window).width())/2,0);
-});
