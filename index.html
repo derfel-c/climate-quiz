@@ -21096,27 +21096,31 @@
 
 
     <div id="menu" class="centered-card-container">
-        <div id="new-game" class="menu-point" onclick="newGame()">
+        <div id="new-game" class="menu-point button" onclick="newGame()">
             Neues Spiel
         </div>
-        <div id="about" class="menu-point">
+        <div id="about" class="menu-point button">
             Über
         </div>
     </div>
 
     <!-- Queststion skeleton -->
     <div id="question-container" class="centered-card-container">
-        <p class="tippingPoint">Tipping point</p>
+        <p id="tippingPoint"></p>
         <div class="top-row">
-            <img src="assets/placeholder.jpg" alt="Platzhalter Bild">
-            <p id="question">Wie stark hat sich die Ausdehnung des Eises seit den 1950er/60er Jahren verringert?</p>
+            <img id="question-img" src="assets/placeholder.jpg" alt="Platzhalter Bild">
+            <p id="question"></p>
         </div>
-        <div class="bottom-row">
-            <div class="answer"><p id="answer-1">Antwort 1</p></div>
-            <div class="answer"><p id="answer-2">Antwort 2</p></div>
-            <div class="answer"><p id="answer-3">Antwort 3</p></div>
-        </div>
-        <p class="question-nr"></p>
+        <div id="answer-container" class="bottom-row"></div>
+        <footer>
+            <p id="question-nr"></p>
+            <div id="continue-button" class="button" onclick="nextQuestion()">Nächste Frage</div>
+        </footer>
+    </div>
+
+    <div id="question-summary" class="centered-card-container">
+        <p id="score"><span id="right-answers"></span>/3 Fragen Richtig</p>
+        <div id="back-to-map" class="button" onclick="closeQuestions()">zurück zur Weltkarte</div>
     </div>
 
 

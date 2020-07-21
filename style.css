@@ -30,6 +30,7 @@ body {
 
 #world-map #tippingPoints {
     visibility: hidden;
+    transition: opacity 1s ease-out;
 }
 
 .centered-card-container {
@@ -49,16 +50,19 @@ body {
 }
 
 #menu > * {
+    text-align: center;
+}
+
+.button {
     cursor: pointer;
     background-color: rgba(211,211,211,1);
     padding: 1em;
     margin: 1em;
     border-radius: 10px;
     border: 1px solid rgb(187, 187, 187);
-    text-align: center;
 }
 
-#menu > *:hover {
+.button:hover {
     transition: background-color .1s linear;
     background-color: rgba(211,211,211,0.4);
 }
@@ -70,6 +74,8 @@ body {
     transform: translate(-50%, -50%) scale(0);
     
     background-color: var(--transparent-background);
+    will-change: transform;
+    transition: transform 1s ease-in-out;
 }
 
 .scale-out-from-center {
@@ -79,11 +85,11 @@ body {
 }
 
 .fade-out {
-    transition: opacity 1s ease-out;
     opacity: 0;
+    transition: opacity 1s ease-out;
 }
 
-#question-container .tippingPoint {
+#question-container #tippingPoint {
     text-align: center;
     margin-bottom: 1em;
 }
@@ -107,16 +113,34 @@ body {
     padding: 0 3rem 0 3rem;
 }
 
-#question-container .bottom-row .answer {
-    cursor: pointer;
-    background-color: rgba(211,211,211,1);
-    margin-top: 1em;
-    padding: 1em;
-    border-radius: 10px;
-    border: 1px solid rgb(187, 187, 187);
+#question-container #answer-container > p {
+    margin-left: 0;
+    margin-right: 0;
 }
 
-#question-container .bottom-row .answer:hover {
-    transition: background-color .1s linear;
-    background-color: rgba(211,211,211,0.4);
+#question-container footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: flex;
+    align-items: center;
+}
+
+#question-container footer #continue-button {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin: 0;
+    transform: translate(-50%,0);
+}
+
+#question-summary {
+    visibility: hidden;
+    background: rgb(224, 224, 224);
+    text-align: center;
+}
+
+#question-summary #score {
+    margin: 1rem;
+    margin-bottom: 2rem;
+    font-size: 18px;
 }
