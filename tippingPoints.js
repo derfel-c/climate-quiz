@@ -484,7 +484,7 @@ let tippingPoints = [
                         correct: true
                     },
                     {
-                        value: "keine",
+                        value: "Keine",
                         correct: false
                     },
                     {
