@@ -5,6 +5,7 @@ let tippingPoints = [
         sources: [
           "https://wiki.bildungsserver.de/klimawandel/index.php/Arktisches_Meereis"
         ],
+        visited: false,
         questions: [
             {
                 question: "Um wie viel Prozent nimmt die Ausdehnung des Eises pro Jahrzent ab?",
@@ -67,6 +68,7 @@ let tippingPoints = [
           "https://www.geo.de/reisen/reisequiz/13978-quiz-quiz-was-wissen-sie-ueber-groenland",
           "https://wiki.bildungsserver.de/klimawandel/index.php/Gr%C3%B6nl%C3%A4ndischer_Eisschild"
         ],
+        visited: false,
         questions: [
             {
                 question: "Was ist ein großer Unterschied des Grönländischen Eisschildes im Vergleich zur Antarktis?",
@@ -127,6 +129,7 @@ let tippingPoints = [
         sources: [
           "https://wiki.bildungsserver.de/klimawandel/index.php/Antarktischer_Eisschild"
         ],
+        visited: false,
         questions: [
             {
                 question: "Welche Fläche umfasst der auf Land und Ozeanboden ruhende Eisschild?",
@@ -187,6 +190,7 @@ let tippingPoints = [
         sources: [
           "https://de.wikipedia.org/wiki/Thermohaline_Zirkulation"
         ],
+        visited: false,
         questions: [
             {
                 question: "Was ist eine thermohaline Zirkulation?",
@@ -247,6 +251,7 @@ let tippingPoints = [
         sources: [
           "https://de.wikipedia.org/wiki/El_Niño-Southern_Oscillation#Auswirkungen"
         ],
+        visited: false,
         questions: [
             {
                 question: "Wie heißt die Abkürzung für El Niño-Southern Oscillation?",
@@ -307,6 +312,7 @@ let tippingPoints = [
         sources: [
           "https://de.wikipedia.org/wiki/Indischer_Monsun"
         ],
+        visited: false,
         questions: [
             {
                 question: "Welche Besonderheit weist der indische Sommermonsun im Vergleich zu anderen Monsunen auf?",
@@ -367,6 +373,7 @@ let tippingPoints = [
         sources: [
           "https://de.wikipedia.org/wiki/Westafrikanisches_Monsunsystem#:~:text=Der%20westafrikanische%20Monsun%20(WAM)%20ist,interagierenden%20Raum%2D%20und%20Zeitskalen%20aus."
         ],
+        visited: false,
         questions: [
             {
                 question: "Was ist das Westafrikanische Monsunsystem?",
@@ -428,6 +435,7 @@ let tippingPoints = [
           "https://www.abenteuer-regenwald.de/wissen/folgen",
           "https://www.regenwald.org/news/8950/30-millionen-hektar-pro-jahr-weltweite-abholzung-auf-rekordniveau"
         ],
+        visited: false,
         questions: [
             {
                 question: "Wieviele Male mehr speichern Regenwälder CO2 in den Pflanzen als heimische Wälder?",
@@ -489,6 +497,7 @@ let tippingPoints = [
           "https://de.wikipedia.org/wiki/Borealer_Nadelwald",
           "https://www.learningsnacks.de/share/9551"
         ],
+        visited: false,
         questions: [
             {
                 question: "In welcher Klimazone befinden sich boreale Wälder?",

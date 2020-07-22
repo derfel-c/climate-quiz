@@ -23,6 +23,13 @@ function closeQuestions() {
 
 function openQuestions(tippingPointId) {
     tippingPointObj = tippingPoints.find(tippingPoint => tippingPoint.id === tippingPointId);
+    // Has this tipping point already been visited?
+    if (tippingPointObj.visited === true) {
+        window.alert('Diese Region wurde bereits besucht!');
+        return;
+    }
+    console.log(tippingPointObj.visited);
+    tippingPointObj.visited = true;
     document.getElementById("question-container").classList.add("scale-out-from-center");
     document.getElementById("tippingPoints").classList.add("fade-out");
     currentQuestionGen = questionGen(tippingPointObj.questions);
