@@ -1,6 +1,7 @@
 let IS_ANSWER_SELECTED = false;
 let currentQuestionGen;
 let currentTheme;
+let currentSources;
 let questionNr;
 let currentRightAnswers;
 
@@ -29,6 +30,7 @@ function openQuestions(tippingPointId) {
     currentTheme = tippingPointObj.desc;
     questionNr = 1;
     currentRightAnswers = 0;
+    currentSources = tippingPointObj.sources;
     nextQuestion();
 }
 
@@ -68,10 +70,20 @@ function showQuestionResults() {
     let questSummaryEle = document.getElementById("question-summary");
     let rightAnswersEle = document.getElementById("right-answers");
     let scoreEle = document.getElementById("score");
+    let linksEle = document.getElementById("links");
+    let domainRegex = new RegExp("^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/\n]+)");
 
     questSummaryEle.style.visibility = "visible";
     rightAnswersEle.innerHTML = currentRightAnswers;
     scoreEle.classList.add("progress-" + currentRightAnswers);
+    linksEle.innerHTML = "";
+    for (const source of currentSources) {
+        let node = document.createElement("a");
+        node.href = source;
+        node.target = "_blank";
+        node.innerHTML = domainRegex.exec(source)[1] + "<br>";
+        linksEle.appendChild(node);
+    }
 }
 
 function handleAnswer(mouseEvent) {
