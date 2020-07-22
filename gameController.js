@@ -74,9 +74,11 @@ function nextQuestion() {
 function showQuestionResults() {
     let questSummaryEle = document.getElementById("question-summary");
     let rightAnswersEle = document.getElementById("right-answers");
+    let scoreEle = document.getElementById("score");
 
     questSummaryEle.style.visibility = "visible";
     rightAnswersEle.innerHTML = currentRightAnswers;
+    scoreEle.classList.add("progress-" + currentRightAnswers);
 }
 
 function handleAnswer(mouseEvent) {
@@ -84,6 +86,7 @@ function handleAnswer(mouseEvent) {
     let answerContainer = document.getElementById("answer-container");
     let targetEle = mouseEvent.target;
     targetEle.style.boxShadow = "inset 0 0 4px 2px rgba(0, 0, 0, 0.2)";
+    targetEle.style.border = "3px solid #5882FA";
     if (targetEle.getAttribute("correct") === "true") {
         currentRightAnswers++;
     }
