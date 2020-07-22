@@ -4,6 +4,8 @@ let currentTheme;
 let currentSources;
 let questionNr;
 let currentRightAnswers;
+let overheatedRegions = [];
+let savedRegions = [];
 
 function newGame() {
     document.getElementById("menu").style.visibility = "hidden";
@@ -20,6 +22,12 @@ function closeQuestions() {
     document.getElementById("question-container").classList.remove("scale-out-from-center");
     document.getElementById("tippingPoints").classList.remove("fade-out");
     document.getElementById("question-summary").style.visibility = "hidden";
+    for (const tippingPointId of overheatedRegions) {
+        document.getElementById(tippingPointId).style.fill = "#ff8080";
+    }
+    for (const tippingPointId of savedRegions) {
+        document.getElementById(tippingPointId).style.fill = "#99ff99";
+    }
 }
 
 function openQuestions(tippingPointId) {
@@ -29,7 +37,6 @@ function openQuestions(tippingPointId) {
         window.alert('Diese Region wurde bereits besucht!');
         return;
     }
-    console.log(tippingPointObj.visited);
     tippingPointObj.visited = true;
     document.getElementById("question-container").classList.add("scale-out-from-center");
     document.getElementById("tippingPoints").classList.add("fade-out");
@@ -46,6 +53,14 @@ function nextQuestion() {
     let gen = currentQuestionGen.next();
     if (gen.done) {
         showQuestionResults();
+        // set colour of 'lost' and 'saved' regions
+        let tippingPointObj = tippingPoints.find( tp => tp.desc === (document.getElementById("tippingPoint").innerText));
+        if (currentRightAnswers <= 1) {
+            overheatedRegions.push(tippingPointObj.id);
+        }
+        else {
+            savedRegions.push(tippingPointObj.id);
+        }
         return;
     }
     let questionObj = gen.value;
