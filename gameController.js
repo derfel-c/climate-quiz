@@ -37,10 +37,10 @@ function closeQuestions() {
     document.getElementById("tippingPoints").classList.remove("fade-out");
     document.getElementById("question-summary").style.visibility = "hidden";
     for (const tippingPointId of overheatedRegions) {
-        document.getElementById(tippingPointId).style.fill = "#ff8080";
+        document.getElementById(tippingPointId).style.fill = "rgba(255, 102, 102, 0.6)";
     }
     for (const tippingPointId of savedRegions) {
-        document.getElementById(tippingPointId).style.fill = "#99ff99";
+        document.getElementById(tippingPointId).style.fill = "rgba(135, 211, 124,0.6)";
     }
 }
 
@@ -80,6 +80,8 @@ function nextQuestion() {
     let questionObj = gen.value;
     document.getElementById("tippingPoint").innerHTML = currentTheme;
     let img = document.getElementById("question-img"); // still just a placeholder img
+    let tippingPointObj = tippingPoints.find(tp => tp.desc === currentTheme);
+    img.src = `assets/${tippingPointObj.img}`;
     let question = document.getElementById("question");
     let answerContainer = document.getElementById("answer-container");
     let answersRand = questionObj.answers.sort(() => Math.random() - 0.5);

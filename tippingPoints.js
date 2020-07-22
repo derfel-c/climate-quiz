@@ -2,6 +2,7 @@ let tippingPoints = [
     {
         id: "tippingPoint-1",
         desc: "Abschmelzen des sommerlichen arktischen Meereises",
+        img: "arctic.jpg",
         sources: [
           "https://wiki.bildungsserver.de/klimawandel/index.php/Arktisches_Meereis"
         ],
@@ -63,6 +64,7 @@ let tippingPoints = [
     {
         id: "tippingPoint-2",
         desc: "Abschmelzen des Grönländischen Eisschildes",
+        img: "placeholder.jpg",
         sources: [
           "https://de.wikipedia.org/wiki/Gr%C3%B6nl%C3%A4ndischer_Eisschild",
           "https://www.geo.de/reisen/reisequiz/13978-quiz-quiz-was-wissen-sie-ueber-groenland",
@@ -126,6 +128,7 @@ let tippingPoints = [
     {
         id: "tippingPoint-3",
         desc: "Abschmelzen des Westantarktischen Eisschildes",
+        img: "arctic.jpg",
         sources: [
           "https://wiki.bildungsserver.de/klimawandel/index.php/Antarktischer_Eisschild"
         ],
@@ -187,6 +190,7 @@ let tippingPoints = [
     {
         id: "tippingPoint-4",
         desc: "Erlahmen der atlantischen thermohalinen Zirkulation",
+        img: "thermohalineZirkulation.jpg",
         sources: [
           "https://de.wikipedia.org/wiki/Thermohaline_Zirkulation"
         ],
@@ -248,6 +252,7 @@ let tippingPoints = [
     {
         id: "tippingPoint-5",
         desc: "Veränderung der El Niño-Southern Oscillation (ENSO)",
+        img: "elnino.png",
         sources: [
           "https://de.wikipedia.org/wiki/El_Niño-Southern_Oscillation#Auswirkungen"
         ],
@@ -309,6 +314,7 @@ let tippingPoints = [
     {
         id: "tippingPoint-6",
         desc: "Zusammenbruch des indischen Sommermonsuns",
+        img: "monsoon.jpg",
         sources: [
           "https://de.wikipedia.org/wiki/Indischer_Monsun"
         ],
@@ -370,6 +376,7 @@ let tippingPoints = [
     {
         id: "tippingPoint-7",
         desc: "Veränderungen im Westafrikanischen Monsunsystem mit Auswirkungen auf Sahara und Sahelzone (mit möglicherweise Ergrünen der Sahara als positivem Kippelement)",
+        img: "westafrica.jpg",
         sources: [
           "https://de.wikipedia.org/wiki/Westafrikanisches_Monsunsystem#:~:text=Der%20westafrikanische%20Monsun%20(WAM)%20ist,interagierenden%20Raum%2D%20und%20Zeitskalen%20aus."
         ],
@@ -431,6 +438,7 @@ let tippingPoints = [
     {
         id: "tippingPoint-8",
         desc: "Entwaldung des tropischen Regenwaldes",
+        img: "rainforest.jpg",
         sources: [
           "https://www.abenteuer-regenwald.de/wissen/folgen",
           "https://www.regenwald.org/news/8950/30-millionen-hektar-pro-jahr-weltweite-abholzung-auf-rekordniveau"
@@ -493,6 +501,7 @@ let tippingPoints = [
     {
         id: "tippingPoint-9",
         desc: "Rückgang borealer Wälder",
+        img: "thaiga.jpg",
         sources: [
           "https://de.wikipedia.org/wiki/Borealer_Nadelwald",
           "https://www.learningsnacks.de/share/9551"
