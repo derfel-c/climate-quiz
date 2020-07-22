@@ -140,7 +140,42 @@ body {
 }
 
 #question-summary #score {
-    margin: 1rem;
-    margin-bottom: 2rem;
+    margin: auto;
+    margin-bottom: 1rem;
     font-size: 18px;
+}
+
+.circular-progress-bar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    background: #ddd;
+}
+
+.progress-1 {
+    background-image: linear-gradient(41deg, #ddd 50%, transparent 50%), linear-gradient(-90deg, #ff6666 50%, #ddd 50%);
+}
+
+.progress-2 {
+    background-image: linear-gradient(-90deg, #F7FE2E 50%, transparent 50%), linear-gradient(-45deg, #F7FE2E 50%, #ddd 50%);
+}
+
+.progress-3 {
+    background-image: linear-gradient(90deg, #87d37c 50%, transparent 50%), linear-gradient(-90deg, #87d37c 50%, #ddd 50%);
+}
+
+.circular-progress-bar .overlay {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    background: #fff;
+    text-align: center;
+    padding-top: 30%;
+
+
+    font-size: 100%;
+    line-height: 24px;
+    box-sizing: border-box;
 }

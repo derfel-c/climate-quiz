@@ -21104,7 +21104,7 @@
         </div>
     </div>
 
-    <!-- Queststion skeleton -->
+    <!-- Question skeleton -->
     <div id="question-container" class="centered-card-container">
         <p id="tippingPoint"></p>
         <div class="top-row">
@@ -21119,9 +21119,12 @@
     </div>
 
     <div id="question-summary" class="centered-card-container">
-        <p id="score"><span id="right-answers"></span>/3 Fragen Richtig</p>
+        <div id="score" class="circular-progress-bar">
+            <div class="overlay"><span id="right-answers"></span>/3</div>
+        </div>
         <div id="back-to-map" class="button" onclick="closeQuestions()">zurück zur Weltkarte</div>
     </div>
+
 
 
     <script src="tippingPoints.js"></script>
