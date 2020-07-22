@@ -125,7 +125,7 @@ body {
     align-items: center;
 }
 
-#question-container footer #continue-button {
+#question-container footer #continue-button #back-button {
     display: inline-block;
     position: absolute;
     left: 50%;
