@@ -110,7 +110,7 @@ let tippingPoints = [
                         correct: true
                     },
                     {
-                        value: "Eindringen von ozeanischem Tiefenwasser",
+                        value: "Ausbleibender Niederschlag",
                         correct: false
                     },
                     {
