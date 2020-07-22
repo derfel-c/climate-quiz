@@ -82,7 +82,8 @@ function showQuestionResults() {
 
     questSummaryEle.style.visibility = "visible";
     rightAnswersEle.innerHTML = currentRightAnswers;
-    scoreEle.classList.add("progress-" + currentRightAnswers);
+
+    scoreEle.className = "progress-" + currentRightAnswers + " circular-progress-bar";
     linksEle.innerHTML = "";
     for (const source of currentSources) {
         let node = document.createElement("a");
