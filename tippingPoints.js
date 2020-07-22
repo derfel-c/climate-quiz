@@ -561,4 +561,30 @@ let tippingPoints = [
             }
         ]
     },
+    {
+        id: "bonus",
+        desc: "Bonusfrage",
+        img: "",
+        sources: [],
+        visited: false,
+        questions: [
+            {
+                question: "Warum wird im Zusammenhang mit der globalen Erwärmung oft die 1,5° Marke genannt?",
+                answers: [
+                    {
+                        value: "Das Risiko, Kippelemente und unkontrollierbare Kettenreaktionen auszulösen, ist bei einer Erwärmung um 1,5 °C deutlich geringer.",
+                        correct: true
+                    },
+                    {
+                        value: "Eine Erwärmung von 1,5° hätte keinerlei Auswirkungen auf das Klima zur Folge.",
+                        correct: false
+                    },
+                    {
+                        value: "Jede Erwärmung über 1,5° würde das Versinken einiger Kontinente im Meer bedeuten",
+                        correct: false
+                    }
+                ]
+            }
+        ]
+    }
 ];
