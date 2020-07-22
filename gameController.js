@@ -12,6 +12,20 @@ function newGame() {
     document.getElementById("tippingPoints").style.visibility = "visible";
 }
 
+function ueber(){
+    document.getElementById("menu").style.visibility = "hidden";
+    document.getElementById("tippingPoints").style.visibility = "hidden";
+    document.getElementById("ueber").style.visibility = "visible";  
+    document.getElementById("back-button").style.visibility = "visible";  
+}
+
+function back(){
+    document.getElementById("menu").style.visibility = "visible";
+    document.getElementById("tippingPoints").style.visibility = "hidden";
+    document.getElementById("ueber").style.visibility = "hidden";  
+    document.getElementById("back-button").style.visibility = "hidden";
+}
+
 function* questionGen(questions) {
     for (const question of questions) {
         yield question;
@@ -97,7 +111,8 @@ function showQuestionResults() {
 
     questSummaryEle.style.visibility = "visible";
     rightAnswersEle.innerHTML = currentRightAnswers;
-    scoreEle.classList.add("progress-" + currentRightAnswers);
+
+    scoreEle.className = "progress-" + currentRightAnswers + " circular-progress-bar";
     linksEle.innerHTML = "";
     for (const source of currentSources) {
         let node = document.createElement("a");
