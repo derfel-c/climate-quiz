@@ -10,14 +10,14 @@ function newGame() {
     document.getElementById("tippingPoints").style.visibility = "visible";
 }
 
-function ueber(){
+function ueber() {
     document.getElementById("menu").style.visibility = "hidden";
     document.getElementById("tippingPoints").style.visibility = "hidden";
     document.getElementById("ueber").style.visibility = "visible";  
     document.getElementById("back-button").style.visibility = "visible";  
 }
 
-function back(){
+function back() {
     document.getElementById("menu").style.visibility = "visible";
     document.getElementById("tippingPoints").style.visibility = "hidden";
     document.getElementById("ueber").style.visibility = "hidden";  
