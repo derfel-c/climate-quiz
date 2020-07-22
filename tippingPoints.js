@@ -2,6 +2,9 @@ let tippingPoints = [
     {
         id: "tippingPoint-1",
         desc: "Abschmelzen des sommerlichen arktischen Meereises",
+        sources: [
+          "https://wiki.bildungsserver.de/klimawandel/index.php/Arktisches_Meereis"
+        ],
         questions: [
             {
                 question: "Um wie viel Prozent nimmt die Ausdehnung des Eises pro Jahrzent ab?",
@@ -59,6 +62,11 @@ let tippingPoints = [
     {
         id: "tippingPoint-2",
         desc: "Abschmelzen des Grönländischen Eisschildes",
+        sources: [
+          "https://de.wikipedia.org/wiki/Gr%C3%B6nl%C3%A4ndischer_Eisschild",
+          "https://www.geo.de/reisen/reisequiz/13978-quiz-quiz-was-wissen-sie-ueber-groenland",
+          "https://wiki.bildungsserver.de/klimawandel/index.php/Gr%C3%B6nl%C3%A4ndischer_Eisschild"
+        ],
         questions: [
             {
                 question: "Was ist ein großer Unterschied des Grönländischen Eisschildes im Vergleich zur Antarktis?",
@@ -116,6 +124,9 @@ let tippingPoints = [
     {
         id: "tippingPoint-3",
         desc: "Abschmelzen des Westantarktischen Eisschildes",
+        sources: [
+          "https://wiki.bildungsserver.de/klimawandel/index.php/Antarktischer_Eisschild"
+        ],
         questions: [
             {
                 question: "Welche Fläche umfasst der auf Land und Ozeanboden ruhende Eisschild?",
@@ -173,6 +184,9 @@ let tippingPoints = [
     {
         id: "tippingPoint-4",
         desc: "Erlahmen der atlantischen thermohalinen Zirkulation",
+        sources: [
+          "https://de.wikipedia.org/wiki/Thermohaline_Zirkulation"
+        ],
         questions: [
             {
                 question: "Was ist eine thermohaline Zirkulation?",
@@ -230,6 +244,9 @@ let tippingPoints = [
     {
         id: "tippingPoint-5",
         desc: "Veränderung der El Niño-Southern Oscillation (ENSO)",
+        sources: [
+          "https://de.wikipedia.org/wiki/El_Niño-Southern_Oscillation#Auswirkungen"
+        ],
         questions: [
             {
                 question: "Wie heißt die Abkürzung für El Niño-Southern Oscillation?",
@@ -287,6 +304,9 @@ let tippingPoints = [
     {
         id: "tippingPoint-6",
         desc: "Zusammenbruch des indischen Sommermonsuns",
+        sources: [
+          "https://de.wikipedia.org/wiki/Indischer_Monsun"
+        ],
         questions: [
             {
                 question: "Welche Besonderheit weist der indische Sommermonsun im Vergleich zu anderen Monsunen auf?",
@@ -344,6 +364,9 @@ let tippingPoints = [
     {
         id: "tippingPoint-7",
         desc: "Veränderungen im Westafrikanischen Monsunsystem mit Auswirkungen auf Sahara und Sahelzone (mit möglicherweise Ergrünen der Sahara als positivem Kippelement)",
+        sources: [
+          "https://de.wikipedia.org/wiki/Westafrikanisches_Monsunsystem#:~:text=Der%20westafrikanische%20Monsun%20(WAM)%20ist,interagierenden%20Raum%2D%20und%20Zeitskalen%20aus."
+        ],
         questions: [
             {
                 question: "Was ist das Westafrikanische Monsunsystem?",
@@ -401,6 +424,10 @@ let tippingPoints = [
     {
         id: "tippingPoint-8",
         desc: "Entwaldung des tropischen Regenwaldes",
+        sources: [
+          "https://www.abenteuer-regenwald.de/wissen/folgen",
+          "https://www.regenwald.org/news/8950/30-millionen-hektar-pro-jahr-weltweite-abholzung-auf-rekordniveau"
+        ],
         questions: [
             {
                 question: "Wieviele Male mehr speichern Regenwälder CO2 in den Pflanzen als heimische Wälder?",
@@ -458,6 +485,10 @@ let tippingPoints = [
     {
         id: "tippingPoint-9",
         desc: "Rückgang borealer Wälder",
+        sources: [
+          "https://de.wikipedia.org/wiki/Borealer_Nadelwald",
+          "https://www.learningsnacks.de/share/9551"
+        ],
         questions: [
             {
                 question: "In welcher Klimazone befinden sich boreale Wälder?",
