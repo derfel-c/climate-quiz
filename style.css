@@ -5,6 +5,7 @@
 
 :root {
     --transparent-background: rgba(211,211,211,0.6);
+    font-size: 18px;
 }
 
 body {
@@ -178,4 +179,10 @@ body {
     font-size: 100%;
     line-height: 24px;
     box-sizing: border-box;
+}
+
+#ueber #back-button {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
 }
