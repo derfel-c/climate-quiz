@@ -564,8 +564,9 @@ let tippingPoints = [
     {
         id: "bonus",
         desc: "Bonusfrage",
-        img: "",
-        sources: [],
+        img: "bonus.jpg",
+        sources: [
+            "https://www.klimareporter.de/1-5-grad"],
         visited: false,
         questions: [
             {
