@@ -375,7 +375,7 @@ let tippingPoints = [
     },
     {
         id: "tippingPoint-7",
-        desc: "Veränderungen im Westafrikanischen Monsunsystem mit Auswirkungen auf Sahara und Sahelzone ",
+        desc: "Veränderungen im Westafrikanischen Monsunsystem mit Auswirkungen auf Sahara und Sahelzone",
         img: "westafrica.jpg",
         sources: [
           "https://de.wikipedia.org/wiki/Westafrikanisches_Monsunsystem#:~:text=Der%20westafrikanische%20Monsun%20(WAM)%20ist,interagierenden%20Raum%2D%20und%20Zeitskalen%20aus."
@@ -463,7 +463,7 @@ let tippingPoints = [
                 ]
             },
             {
-                question: "Wieviel Prozent macht die (Brand-)Rodung der tropischen Regenwälder des weltweitenb Ausstoßes von CO2 aus?",
+                question: "Wieviel Prozent macht die (Brand-)Rodung der tropischen Regenwälder des weltweiten Ausstoßes von CO2 aus?",
                 answers: [
                     {
                         value: "Zwischen 8 und 11 %",
