@@ -159,7 +159,7 @@ function handleAnswer(mouseEvent) {
         timeFactor += 0.1;
     }
     for (const answer of answerContainer.children) {
-        if (answer.innerHTML.includes(rightAnswer)) {
+        if (answer.innerHTML.substring(2).includes(rightAnswer)) {
             answer.style.background = "rgba(135, 211, 124,0.6)";
         } else {
             answer.style.background = "rgba(255, 102, 102, 0.6)";
