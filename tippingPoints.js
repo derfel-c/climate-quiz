@@ -127,7 +127,7 @@ let tippingPoints = [
     },
     {
         id: "tippingPoint-3",
-        desc: "Abschmelzen des Westantarktischen Eisschildes",
+        desc: "Abschmelzen des Antarktischen Eisschildes",
         img: "arctic.jpg",
         sources: [
           "https://wiki.bildungsserver.de/klimawandel/index.php/Antarktischer_Eisschild"
@@ -152,7 +152,7 @@ let tippingPoints = [
                 ]
             },
             {
-                question: "Wie groß ist die gegenwärtige Eismasse des Westantarktischen Eisschildes?",
+                question: "Wie groß ist die gegenwärtige Eismasse des Antarktischen Eisschildes?",
                 answers: [
                     {
                         value: "3,6 Mio km³",
@@ -375,7 +375,7 @@ let tippingPoints = [
     },
     {
         id: "tippingPoint-7",
-        desc: "Veränderungen im Westafrikanischen Monsunsystem mit Auswirkungen auf Sahara und Sahelzone (mit möglicherweise Ergrünen der Sahara als positivem Kippelement)",
+        desc: "Veränderungen im Westafrikanischen Monsunsystem mit Auswirkungen auf Sahara und Sahelzone ",
         img: "westafrica.jpg",
         sources: [
           "https://de.wikipedia.org/wiki/Westafrikanisches_Monsunsystem#:~:text=Der%20westafrikanische%20Monsun%20(WAM)%20ist,interagierenden%20Raum%2D%20und%20Zeitskalen%20aus."
@@ -561,4 +561,30 @@ let tippingPoints = [
             }
         ]
     },
+    {
+        id: "bonus",
+        desc: "Bonusfrage",
+        img: "",
+        sources: [],
+        visited: false,
+        questions: [
+            {
+                question: "Warum wird im Zusammenhang mit der globalen Erwärmung oft die 1,5° Marke genannt?",
+                answers: [
+                    {
+                        value: "Das Risiko, Kippelemente und unkontrollierbare Kettenreaktionen auszulösen, ist bei einer Erwärmung um 1,5 °C deutlich geringer.",
+                        correct: true
+                    },
+                    {
+                        value: "Eine Erwärmung von 1,5° hätte keinerlei Auswirkungen auf das Klima zur Folge.",
+                        correct: false
+                    },
+                    {
+                        value: "Jede Erwärmung über 1,5° würde das Versinken einiger Kontinente im Meer bedeuten",
+                        correct: false
+                    }
+                ]
+            }
+        ]
+    }
 ];
