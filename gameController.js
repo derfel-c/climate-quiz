@@ -4,6 +4,7 @@ let currentTheme;
 let currentSources;
 let currentID;
 let questionNr;
+let currentQuestion;
 let currentRightAnswers;
 let currentTippingPoint;
 let totalRightAnswers;
@@ -13,14 +14,14 @@ function newGame() {
     document.getElementById("menu").style.visibility = "hidden";
     document.getElementById("tippingPoints").style.visibility = "visible";
     document.getElementById("thermometer").style.visibility = "visible";
-    score = 0;
+    totalRightAnswers = 0;
     let thermometerBar = document.getElementById("thermometer-bar");
     let barHeight = 27;
     thermometerBar.style.height = barHeight + "px";
     let thermometerInterval = setInterval(() => {
         thermometerBar.style.height = barHeight + "px";
         // game is gonna be 15 min long with a val of 0.2
-        barHeight += 0.2 * timeFactor;
+        barHeight += 10 * timeFactor;
         if (barHeight >= 207) { // end of game
             clearInterval(thermometerInterval);
             gameOver();
@@ -84,6 +85,7 @@ function openQuestions(tippingPointId) {
 function nextQuestion() {
     if (!currentQuestionGen) { return; }
     let gen = currentQuestionGen.next();
+    currentQuestion = gen.value;
     if (gen.done) {
         showQuestionResults();
         // set colour of 'lost' and 'saved' regions
@@ -114,7 +116,6 @@ function nextQuestion() {
         let node = document.createElement("p");
         node.innerHTML = i + 1 + ". " + answer.value;
         node.classList.add("button");
-        node.setAttribute("correct", answer.correct);
         node.addEventListener("click", (event) => { handleAnswer(event); });
         answerContainer.appendChild(node);
     }
@@ -148,17 +149,20 @@ function handleAnswer(mouseEvent) {
     if (IS_ANSWER_SELECTED) { return; }
     let answerContainer = document.getElementById("answer-container");
     let targetEle = mouseEvent.target;
+    let rightAnswer = currentQuestion.answers.find((answer) => answer.correct === true).value;
+
     targetEle.style.boxShadow = "inset 0 0 4px 2px rgba(0, 0, 0, 0.2)";
     targetEle.style.border = "3px solid #5882FA";
-    if (targetEle.getAttribute("correct") === "true") {
+    if (targetEle.innerHTML.includes(rightAnswer)) {
         currentRightAnswers++;
+    } else {
+        timeFactor += 0.1;
     }
     for (const answer of answerContainer.children) {
-        if (answer.getAttribute("correct") === "true") {
+        if (answer.innerHTML.includes(rightAnswer)) {
             answer.style.background = "rgba(135, 211, 124,0.6)";
         } else {
             answer.style.background = "rgba(255, 102, 102, 0.6)";
-            timeFactor += 0.1;
         }
     }
     document.getElementById("continue-button").style.visibility = "visible";
