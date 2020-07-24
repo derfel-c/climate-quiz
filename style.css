@@ -90,6 +90,7 @@ body {
 
 .fade-out {
     opacity: 0;
+    pointer-events: none;
     transition: opacity 1s ease-out;
 }
 
@@ -129,7 +130,7 @@ body {
     align-items: center;
 }
 
-#question-container footer #continue-button {
+#question-container footer #continue-button, #game-description .button {
     display: inline-block;
     position: absolute;
     left: 50%;
@@ -204,4 +205,22 @@ body {
 
 #game-over-summary {
     visibility: hidden;
+}
+
+#game-description {
+    visibility: hidden;
+    display: flex;
+}
+
+#game-description img {
+    height: 218px;
+}
+
+#game-description p {
+    margin: 1em;
+    margin-left: 2em;
+}
+
+#game-description .button {
+    position: relative;
 }

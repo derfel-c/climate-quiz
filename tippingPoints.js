@@ -4,7 +4,7 @@ let tippingPoints = [
         desc: "Abschmelzen des sommerlichen arktischen Meereises",
         img: "arctic.jpg",
         sources: [
-          "https://wiki.bildungsserver.de/klimawandel/index.php/Arktisches_Meereis"
+            "https://wiki.bildungsserver.de/klimawandel/index.php/Arktisches_Meereis"
         ],
         visited: false,
         questions: [
@@ -33,11 +33,11 @@ let tippingPoints = [
                         correct: true
                     },
                     {
-                        value: "Fast garnicht",
+                        value: "Fast gar nicht",
                         correct: false
                     },
                     {
-                        value: "Ca drei viertel",
+                        value: "Ca drei Viertel",
                         correct: false
                     }
                 ]
@@ -66,14 +66,14 @@ let tippingPoints = [
         desc: "Abschmelzen des Grönländischen Eisschildes",
         img: "placeholder.jpg",
         sources: [
-          "https://de.wikipedia.org/wiki/Gr%C3%B6nl%C3%A4ndischer_Eisschild",
-          "https://www.geo.de/reisen/reisequiz/13978-quiz-quiz-was-wissen-sie-ueber-groenland",
-          "https://wiki.bildungsserver.de/klimawandel/index.php/Gr%C3%B6nl%C3%A4ndischer_Eisschild"
+            "https://de.wikipedia.org/wiki/Gr%C3%B6nl%C3%A4ndischer_Eisschild",
+            "https://www.geo.de/reisen/reisequiz/13978-quiz-quiz-was-wissen-sie-ueber-groenland",
+            "https://wiki.bildungsserver.de/klimawandel/index.php/Gr%C3%B6nl%C3%A4ndischer_Eisschild"
         ],
         visited: false,
         questions: [
             {
-                question: "Was ist ein großer Unterschied des Grönländischen Eisschildes im Vergleich zur Antarktis?",
+                question: "Welche Eigenschaft hat der Grönländische Eisschild im Vergleich zu dem der Antarktis?",
                 answers: [
                     {
                         value: "An den meisten Stellen erreicht der Eisschild das Meer nicht",
@@ -84,7 +84,7 @@ let tippingPoints = [
                         correct: false
                     },
                     {
-                        value: "Im Sommert taut der Eisschild komplett ab",
+                        value: "Im Sommer taut der Eisschild komplett ab",
                         correct: false
                     }
                 ]
@@ -130,7 +130,7 @@ let tippingPoints = [
         desc: "Abschmelzen des Antarktischen Eisschildes",
         img: "arctic.jpg",
         sources: [
-          "https://wiki.bildungsserver.de/klimawandel/index.php/Antarktischer_Eisschild"
+            "https://wiki.bildungsserver.de/klimawandel/index.php/Antarktischer_Eisschild"
         ],
         visited: false,
         questions: [
@@ -192,7 +192,7 @@ let tippingPoints = [
         desc: "Erlahmen der atlantischen thermohalinen Zirkulation",
         img: "thermohalineZirkulation.jpg",
         sources: [
-          "https://de.wikipedia.org/wiki/Thermohaline_Zirkulation"
+            "https://de.wikipedia.org/wiki/Thermohaline_Zirkulation"
         ],
         visited: false,
         questions: [
@@ -204,7 +204,7 @@ let tippingPoints = [
                         correct: true
                     },
                     {
-                        value: "Kombination von Windströmugen, die mindestens die Stärke 10 haben",
+                        value: "Kombination von Windströmungen, die mindestens die Stärke 10 haben",
                         correct: false
                     },
                     {
@@ -231,7 +231,7 @@ let tippingPoints = [
                 ]
             },
             {
-                question: "Auf wieviel km Tiefe wird das winterlinke Absinken des salzriechen und kalten Meereswassers im Nordatlantik initiiert?",
+                question: "Auf wie viel Kilometer Tiefe wird das winterlinke Absinken des salzriechen und kalten Meereswassers im Nordatlantik initiiert?",
                 answers: [
                     {
                         value: "1 bis 4 km",
@@ -254,12 +254,12 @@ let tippingPoints = [
         desc: "Veränderung der El Niño-Southern Oscillation (ENSO)",
         img: "elnino.png",
         sources: [
-          "https://de.wikipedia.org/wiki/El_Niño-Southern_Oscillation#Auswirkungen"
+            "https://de.wikipedia.org/wiki/El_Niño-Southern_Oscillation#Auswirkungen"
         ],
         visited: false,
         questions: [
             {
-                question: "Wie heißt die Abkürzung für El Niño-Southern Oscillation?",
+                question: "Welche Abkürzung steht für El Niño-Southern Oscillation?",
                 answers: [
                     {
                         value: "ENSO",
@@ -316,7 +316,7 @@ let tippingPoints = [
         desc: "Zusammenbruch des indischen Sommermonsuns",
         img: "monsoon.jpg",
         sources: [
-          "https://de.wikipedia.org/wiki/Indischer_Monsun"
+            "https://de.wikipedia.org/wiki/Indischer_Monsun"
         ],
         visited: false,
         questions: [
@@ -378,7 +378,7 @@ let tippingPoints = [
         desc: "Veränderungen im Westafrikanischen Monsunsystem mit Auswirkungen auf Sahara und Sahelzone",
         img: "westafrica.jpg",
         sources: [
-          "https://de.wikipedia.org/wiki/Westafrikanisches_Monsunsystem#:~:text=Der%20westafrikanische%20Monsun%20(WAM)%20ist,interagierenden%20Raum%2D%20und%20Zeitskalen%20aus."
+            "https://de.wikipedia.org/wiki/Westafrikanisches_Monsunsystem#:~:text=Der%20westafrikanische%20Monsun%20(WAM)%20ist,interagierenden%20Raum%2D%20und%20Zeitskalen%20aus."
         ],
         visited: false,
         questions: [
@@ -440,13 +440,13 @@ let tippingPoints = [
         desc: "Entwaldung des tropischen Regenwaldes",
         img: "rainforest.jpg",
         sources: [
-          "https://www.abenteuer-regenwald.de/wissen/folgen",
-          "https://www.regenwald.org/news/8950/30-millionen-hektar-pro-jahr-weltweite-abholzung-auf-rekordniveau"
+            "https://www.abenteuer-regenwald.de/wissen/folgen",
+            "https://www.regenwald.org/news/8950/30-millionen-hektar-pro-jahr-weltweite-abholzung-auf-rekordniveau"
         ],
         visited: false,
         questions: [
             {
-                question: "Wieviele Male mehr speichern Regenwälder CO2 in den Pflanzen als heimische Wälder?",
+                question: "Wie viele Male mehr speichern Regenwälder CO2 in den Pflanzen als heimische Wälder?",
                 answers: [
                     {
                         value: "6x",
@@ -463,35 +463,35 @@ let tippingPoints = [
                 ]
             },
             {
-                question: "Wieviel Prozent macht die (Brand-)Rodung der tropischen Regenwälder des weltweiten Ausstoßes von CO2 aus?",
+                question: "Wie viel Prozent macht die (Brand-)Rodung der tropischen Regenwälder des weltweiten Ausstoßes von CO2 aus?",
                 answers: [
                     {
-                        value: "Zwischen 8 und 11 %",
+                        value: "Zwischen 8% und 11%",
                         correct: true
                     },
                     {
-                        value: "Zwischen 13 und 16%",
+                        value: "Zwischen 13% und 16%",
                         correct: false
                     },
                     {
-                        value: "Zwischen 21 und 23 %",
+                        value: "Zwischen 21% und 23%",
                         correct: false
                     }
                 ]
             },
             {
-                question: "Wieviel Hektar Wald wurde im Jahr 2017 abgeholzt?",
+                question: "Wie viel Hektar Wald wurde im Jahr 2017 abgeholzt?",
                 answers: [
                     {
-                        value: "29,4 Millionen",
+                        value: "29,4 Millionen Hektar",
                         correct: true
                     },
                     {
-                        value: "22,7 Millionen",
+                        value: "22,7 Millionen Hektar",
                         correct: false
                     },
                     {
-                        value: "27,3 Millionen",
+                        value: "27,3 Millionen Hektar",
                         correct: false
                     }
                 ]
@@ -503,8 +503,8 @@ let tippingPoints = [
         desc: "Rückgang borealer Wälder",
         img: "thaiga.jpg",
         sources: [
-          "https://de.wikipedia.org/wiki/Borealer_Nadelwald",
-          "https://www.learningsnacks.de/share/9551"
+            "https://de.wikipedia.org/wiki/Borealer_Nadelwald",
+            "https://www.learningsnacks.de/share/9551"
         ],
         visited: false,
         questions: [
@@ -526,7 +526,7 @@ let tippingPoints = [
                 ]
             },
             {
-                question: "Welche Bäume finden sich hauptsätzlich im borealen Nadelwald wieder?",
+                question: "Welche Bäume finden sich hauptsächlich im borealen Nadelwald wieder?",
                 answers: [
                     {
                         value: "Kiefern, Fichten und Tannen",
@@ -570,18 +570,78 @@ let tippingPoints = [
         visited: false,
         questions: [
             {
-                question: "Warum wird im Zusammenhang mit der globalen Erwärmung oft die 1,5° Marke genannt?",
+                question: "Warum wird im Zusammenhang mit der globalen Erwärmung oft die 1,5°C Marke genannt?",
                 answers: [
                     {
                         value: "Das Risiko, Kippelemente und unkontrollierbare Kettenreaktionen auszulösen, ist bei einer Erwärmung von unter 1,5 °C deutlich geringer.",
                         correct: true
                     },
                     {
-                        value: "Eine Erwärmung von 1,5° hätte keinerlei Auswirkungen auf das Klima zur Folge.",
+                        value: "Eine Erwärmung von 1,5°C hätte keinerlei Auswirkungen auf das Klima zur Folge",
                         correct: false
                     },
                     {
-                        value: "Jede Erwärmung über 1,5° würde das Versinken einiger Kontinente im Meer bedeuten",
+                        value: "Jede Erwärmung über 1,5°C würde das Versinken einiger Kontinente im Meer bedeuten",
+                        correct: false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: "tippingPoint-10",
+        desc: "Auftauen der Permafrostböden",
+        img: "permafrost.jpg",
+        sources: ["https://wiki.bildungsserver.de/klimawandel/index.php/Permafrost"],
+        visited: false,
+        questions: [
+            {
+                question: "Eine Konsequenz des Auftauens der Permafrostböden ist die Bildung von Thermokarst. Was ist Thermokarst?",
+                answers: [
+                    {
+                        value: "Bodenabsenkungen und -einbrüche, die sich mit Wasser füllen",
+                        correct: true
+                    },
+                    {
+                        value: "Wärmespeichernde Schichten im Boden",
+                        correct: false
+                    },
+                    {
+                        value: "Warme ozeanische Zirkulationsströme an den arktischen Küsten",
+                        correct: false
+                    }
+                ]
+            },
+            {
+                question: "Welche der unten genannten Optionen ist eine Folge des Auftauens der Permafrostböden?",
+                answers: [
+                    {
+                        value: "Freisetzung von gespeichertem Methan und Kohlendioxid",
+                        correct: true
+                    },
+                    {
+                        value: "Versalzung der Böden",
+                        correct: false
+                    },
+                    {
+                        value: "Massenhaftes Artensterben",
+                        correct: false
+                    }
+                ]
+            },
+            {
+                question: "Welche Auswirkungen könnte eine durch das Auftauen bedingte Erhöhung der Wasserführung der Flüsse zur Folge haben?",
+                answers: [
+                    {
+                        value: "Veränderte ozeanische Zirkulationsströme und daraus resultierende stärkere Küstenerosion",
+                        correct: true
+                    },
+                    {
+                        value: "Erhöhte Tsunamigefahr aufgrund des veränderten Salzgehaltes",
+                        correct: false
+                    },
+                    {
+                        value: "Häufigeres Vorkommen von starken Unwettern aufgrund erhöhter Luftfeuchtigkeit",
                         correct: false
                     }
                 ]
