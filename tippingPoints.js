@@ -4,7 +4,7 @@ let tippingPoints = [
         desc: "Abschmelzen des sommerlichen arktischen Meereises",
         img: "arctic.jpg",
         sources: [
-          "https://wiki.bildungsserver.de/klimawandel/index.php/Arktisches_Meereis"
+            "https://wiki.bildungsserver.de/klimawandel/index.php/Arktisches_Meereis"
         ],
         visited: false,
         questions: [
@@ -66,9 +66,9 @@ let tippingPoints = [
         desc: "Abschmelzen des Grönländischen Eisschildes",
         img: "placeholder.jpg",
         sources: [
-          "https://de.wikipedia.org/wiki/Gr%C3%B6nl%C3%A4ndischer_Eisschild",
-          "https://www.geo.de/reisen/reisequiz/13978-quiz-quiz-was-wissen-sie-ueber-groenland",
-          "https://wiki.bildungsserver.de/klimawandel/index.php/Gr%C3%B6nl%C3%A4ndischer_Eisschild"
+            "https://de.wikipedia.org/wiki/Gr%C3%B6nl%C3%A4ndischer_Eisschild",
+            "https://www.geo.de/reisen/reisequiz/13978-quiz-quiz-was-wissen-sie-ueber-groenland",
+            "https://wiki.bildungsserver.de/klimawandel/index.php/Gr%C3%B6nl%C3%A4ndischer_Eisschild"
         ],
         visited: false,
         questions: [
@@ -130,7 +130,7 @@ let tippingPoints = [
         desc: "Abschmelzen des Antarktischen Eisschildes",
         img: "arctic.jpg",
         sources: [
-          "https://wiki.bildungsserver.de/klimawandel/index.php/Antarktischer_Eisschild"
+            "https://wiki.bildungsserver.de/klimawandel/index.php/Antarktischer_Eisschild"
         ],
         visited: false,
         questions: [
@@ -192,7 +192,7 @@ let tippingPoints = [
         desc: "Erlahmen der atlantischen thermohalinen Zirkulation",
         img: "thermohalineZirkulation.jpg",
         sources: [
-          "https://de.wikipedia.org/wiki/Thermohaline_Zirkulation"
+            "https://de.wikipedia.org/wiki/Thermohaline_Zirkulation"
         ],
         visited: false,
         questions: [
@@ -254,7 +254,7 @@ let tippingPoints = [
         desc: "Veränderung der El Niño-Southern Oscillation (ENSO)",
         img: "elnino.png",
         sources: [
-          "https://de.wikipedia.org/wiki/El_Niño-Southern_Oscillation#Auswirkungen"
+            "https://de.wikipedia.org/wiki/El_Niño-Southern_Oscillation#Auswirkungen"
         ],
         visited: false,
         questions: [
@@ -316,7 +316,7 @@ let tippingPoints = [
         desc: "Zusammenbruch des indischen Sommermonsuns",
         img: "monsoon.jpg",
         sources: [
-          "https://de.wikipedia.org/wiki/Indischer_Monsun"
+            "https://de.wikipedia.org/wiki/Indischer_Monsun"
         ],
         visited: false,
         questions: [
@@ -375,10 +375,10 @@ let tippingPoints = [
     },
     {
         id: "tippingPoint-7",
-        desc: "Veränderungen im Westafrikanischen Monsunsystem mit Auswirkungen auf Sahara und Sahelzone ",
+        desc: "Veränderungen im Westafrikanischen Monsunsystem mit Auswirkungen auf Sahara und Sahelzone",
         img: "westafrica.jpg",
         sources: [
-          "https://de.wikipedia.org/wiki/Westafrikanisches_Monsunsystem#:~:text=Der%20westafrikanische%20Monsun%20(WAM)%20ist,interagierenden%20Raum%2D%20und%20Zeitskalen%20aus."
+            "https://de.wikipedia.org/wiki/Westafrikanisches_Monsunsystem#:~:text=Der%20westafrikanische%20Monsun%20(WAM)%20ist,interagierenden%20Raum%2D%20und%20Zeitskalen%20aus."
         ],
         visited: false,
         questions: [
@@ -440,8 +440,8 @@ let tippingPoints = [
         desc: "Entwaldung des tropischen Regenwaldes",
         img: "rainforest.jpg",
         sources: [
-          "https://www.abenteuer-regenwald.de/wissen/folgen",
-          "https://www.regenwald.org/news/8950/30-millionen-hektar-pro-jahr-weltweite-abholzung-auf-rekordniveau"
+            "https://www.abenteuer-regenwald.de/wissen/folgen",
+            "https://www.regenwald.org/news/8950/30-millionen-hektar-pro-jahr-weltweite-abholzung-auf-rekordniveau"
         ],
         visited: false,
         questions: [
@@ -503,8 +503,8 @@ let tippingPoints = [
         desc: "Rückgang borealer Wälder",
         img: "thaiga.jpg",
         sources: [
-          "https://de.wikipedia.org/wiki/Borealer_Nadelwald",
-          "https://www.learningsnacks.de/share/9551"
+            "https://de.wikipedia.org/wiki/Borealer_Nadelwald",
+            "https://www.learningsnacks.de/share/9551"
         ],
         visited: false,
         questions: [
@@ -573,7 +573,7 @@ let tippingPoints = [
                 question: "Warum wird im Zusammenhang mit der globalen Erwärmung oft die 1,5°C Marke genannt?",
                 answers: [
                     {
-                        value: "Das Risiko, Kippelemente und unkontrollierbare Kettenreaktionen auszulösen, ist bei einer Erwärmung um 1,5°C deutlich geringer",
+                        value: "Das Risiko, Kippelemente und unkontrollierbare Kettenreaktionen auszulösen, ist bei einer Erwärmung von unter 1,5 °C deutlich geringer.",
                         correct: true
                     },
                     {
@@ -582,6 +582,66 @@ let tippingPoints = [
                     },
                     {
                         value: "Jede Erwärmung über 1,5°C würde das Versinken einiger Kontinente im Meer bedeuten",
+                        correct: false
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        id: "tippingPoint-10",
+        desc: "Auftauen der Permafrostböden",
+        img: "permafrost.jpg",
+        sources: ["https://wiki.bildungsserver.de/klimawandel/index.php/Permafrost"],
+        visited: false,
+        questions: [
+            {
+                question: "Eine Konsequenz des Auftauens der Permafrostböden ist die Bildung von Thermokarst. Was ist Thermokarst?",
+                answers: [
+                    {
+                        value: "Bodenabsenkungen und -einbrüche, die sich mit Wasser füllen",
+                        correct: true
+                    },
+                    {
+                        value: "Wärmespeichernde Schichten im Boden",
+                        correct: false
+                    },
+                    {
+                        value: "Warme ozeanische Zirkulationsströme an den arktischen Küsten",
+                        correct: false
+                    }
+                ]
+            },
+            {
+                question: "Welche der unten genannten Optionen ist eine Folge des Auftauens der Permafrostböden?",
+                answers: [
+                    {
+                        value: "Freisetzung von gespeichertem Methan und Kohlendioxid",
+                        correct: true
+                    },
+                    {
+                        value: "Versalzung der Böden",
+                        correct: false
+                    },
+                    {
+                        value: "Massenhaftes Artensterben",
+                        correct: false
+                    }
+                ]
+            },
+            {
+                question: "Welche Auswirkungen könnte eine durch das Auftauen bedingte Erhöhung der Wasserführung der Flüsse zur Folge haben?",
+                answers: [
+                    {
+                        value: "Veränderte ozeanische Zirkulationsströme und daraus resultierende stärkere Küstenerosion",
+                        correct: true
+                    },
+                    {
+                        value: "Erhöhte Tsunamigefahr aufgrund des veränderten Salzgehaltes",
+                        correct: false
+                    },
+                    {
+                        value: "Häufigeres Vorkommen von starken Unwettern aufgrund erhöhter Luftfeuchtigkeit",
                         correct: false
                     }
                 ]
