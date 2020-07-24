@@ -33,11 +33,11 @@ let tippingPoints = [
                         correct: true
                     },
                     {
-                        value: "Fast garnicht",
+                        value: "Fast gar nicht",
                         correct: false
                     },
                     {
-                        value: "Ca drei viertel",
+                        value: "Ca drei Viertel",
                         correct: false
                     }
                 ]
@@ -73,7 +73,7 @@ let tippingPoints = [
         visited: false,
         questions: [
             {
-                question: "Was ist ein großer Unterschied des Grönländischen Eisschildes im Vergleich zur Antarktis?",
+                question: "Welche Eigenschaft hat der Grönländische Eisschild im Vergleich zu dem der Antarktis?",
                 answers: [
                     {
                         value: "An den meisten Stellen erreicht der Eisschild das Meer nicht",
@@ -84,7 +84,7 @@ let tippingPoints = [
                         correct: false
                     },
                     {
-                        value: "Im Sommert taut der Eisschild komplett ab",
+                        value: "Im Sommer taut der Eisschild komplett ab",
                         correct: false
                     }
                 ]
@@ -204,7 +204,7 @@ let tippingPoints = [
                         correct: true
                     },
                     {
-                        value: "Kombination von Windströmugen, die mindestens die Stärke 10 haben",
+                        value: "Kombination von Windströmungen, die mindestens die Stärke 10 haben",
                         correct: false
                     },
                     {
@@ -231,7 +231,7 @@ let tippingPoints = [
                 ]
             },
             {
-                question: "Auf wieviel km Tiefe wird das winterlinke Absinken des salzriechen und kalten Meereswassers im Nordatlantik initiiert?",
+                question: "Auf wie viel Kilometer Tiefe wird das winterlinke Absinken des salzriechen und kalten Meereswassers im Nordatlantik initiiert?",
                 answers: [
                     {
                         value: "1 bis 4 km",
@@ -259,7 +259,7 @@ let tippingPoints = [
         visited: false,
         questions: [
             {
-                question: "Wie heißt die Abkürzung für El Niño-Southern Oscillation?",
+                question: "Welche Abkürzung steht für El Niño-Southern Oscillation?",
                 answers: [
                     {
                         value: "ENSO",
@@ -446,7 +446,7 @@ let tippingPoints = [
         visited: false,
         questions: [
             {
-                question: "Wieviele Male mehr speichern Regenwälder CO2 in den Pflanzen als heimische Wälder?",
+                question: "Wie viele Male mehr speichern Regenwälder CO2 in den Pflanzen als heimische Wälder?",
                 answers: [
                     {
                         value: "6x",
@@ -463,35 +463,35 @@ let tippingPoints = [
                 ]
             },
             {
-                question: "Wieviel Prozent macht die (Brand-)Rodung der tropischen Regenwälder des weltweitenb Ausstoßes von CO2 aus?",
+                question: "Wie viel Prozent macht die (Brand-)Rodung der tropischen Regenwälder des weltweiten Ausstoßes von CO2 aus?",
                 answers: [
                     {
-                        value: "Zwischen 8 und 11 %",
+                        value: "Zwischen 8% und 11%",
                         correct: true
                     },
                     {
-                        value: "Zwischen 13 und 16%",
+                        value: "Zwischen 13% und 16%",
                         correct: false
                     },
                     {
-                        value: "Zwischen 21 und 23 %",
+                        value: "Zwischen 21% und 23%",
                         correct: false
                     }
                 ]
             },
             {
-                question: "Wieviel Hektar Wald wurde im Jahr 2017 abgeholzt?",
+                question: "Wie viel Hektar Wald wurde im Jahr 2017 abgeholzt?",
                 answers: [
                     {
-                        value: "29,4 Millionen",
+                        value: "29,4 Millionen Hektar",
                         correct: true
                     },
                     {
-                        value: "22,7 Millionen",
+                        value: "22,7 Millionen Hektar",
                         correct: false
                     },
                     {
-                        value: "27,3 Millionen",
+                        value: "27,3 Millionen Hektar",
                         correct: false
                     }
                 ]
@@ -526,7 +526,7 @@ let tippingPoints = [
                 ]
             },
             {
-                question: "Welche Bäume finden sich hauptsätzlich im borealen Nadelwald wieder?",
+                question: "Welche Bäume finden sich hauptsächlich im borealen Nadelwald wieder?",
                 answers: [
                     {
                         value: "Kiefern, Fichten und Tannen",
@@ -570,18 +570,18 @@ let tippingPoints = [
         visited: false,
         questions: [
             {
-                question: "Warum wird im Zusammenhang mit der globalen Erwärmung oft die 1,5° Marke genannt?",
+                question: "Warum wird im Zusammenhang mit der globalen Erwärmung oft die 1,5°C Marke genannt?",
                 answers: [
                     {
-                        value: "Das Risiko, Kippelemente und unkontrollierbare Kettenreaktionen auszulösen, ist bei einer Erwärmung um 1,5 °C deutlich geringer.",
+                        value: "Das Risiko, Kippelemente und unkontrollierbare Kettenreaktionen auszulösen, ist bei einer Erwärmung um 1,5°C deutlich geringer",
                         correct: true
                     },
                     {
-                        value: "Eine Erwärmung von 1,5° hätte keinerlei Auswirkungen auf das Klima zur Folge.",
+                        value: "Eine Erwärmung von 1,5°C hätte keinerlei Auswirkungen auf das Klima zur Folge",
                         correct: false
                     },
                     {
-                        value: "Jede Erwärmung über 1,5° würde das Versinken einiger Kontinente im Meer bedeuten",
+                        value: "Jede Erwärmung über 1,5°C würde das Versinken einiger Kontinente im Meer bedeuten",
                         correct: false
                     }
                 ]
