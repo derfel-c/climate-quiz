@@ -20,3 +20,7 @@ Additionally each wrongly answered question decreases the time available. If the
 Screenshot showing the main screen of the game
 
 ![Game Screenshot](assets/readme_screenshot.png)
+
+
+## Attribution:
+Background "Blank Equirectangular Physical Map of the World" by [mapswire.com](https://mapswire.com/world/physical-maps/), licensed under CC BY 4.0.
