@@ -1,4 +1,4 @@
-let IS_ANSWER_SELECTED = false;
+let isAnswerSelected = false;
 let currentQuestionGen;
 let currentTheme;
 let currentSources;
@@ -8,21 +8,30 @@ let currentQuestion;
 let currentRightAnswers;
 let currentTippingPoint;
 let totalRightAnswers;
-let timeFactor = 1;
+let timeFactor;
+let totalFinishedRegions;
 
 function newGame() {
     document.getElementById("menu").style.visibility = "hidden";
     document.getElementById("tippingPoints").style.visibility = "visible";
+    document.getElementById("tippingPoints").classList.remove("fade-out");
     document.getElementById("thermometer").style.visibility = "visible";
     totalRightAnswers = 0;
+    currentRightAnswers = 0;
+    totalFinishedRegions = 0;
+    timeFactor = 1;
+    for (const tippingPoint of tippingPoints) {
+        tippingPoint.visited = false;
+        document.getElementById(tippingPoint.id).style.fill = "rgba(211,211,211,0.6)";
+    }
     let thermometerBar = document.getElementById("thermometer-bar");
     let barHeight = 27;
     thermometerBar.style.height = barHeight + "px";
     let thermometerInterval = setInterval(() => {
         thermometerBar.style.height = barHeight + "px";
         // game is gonna be 15 min long with a val of 0.2
-        barHeight += 0.2 * timeFactor;
-        if (barHeight >= 207) { // end of game
+        barHeight += 1 * timeFactor;
+        if (barHeight >= 207 || totalFinishedRegions === 10) { // end of game
             clearInterval(thermometerInterval);
             gameOver();
         }
@@ -31,10 +40,10 @@ function newGame() {
 
 function gameOver() {
     document.getElementById("game-over-summary").style.visibility = "visible";
-    document.getElementById("total-right-answers").innerHTML = totalRightAnswers;
-    document.getElementById("question-summary").style.visibility = "hidden";
+    closeQuestions();
     document.getElementById("tippingPoints").classList.add("fade-out");
-    document.getElementById("question-container").classList.remove("scale-out-from-center");
+    document.getElementById("thermometer").style.visibility = "hidden";
+    document.getElementById("total-right-answers").innerHTML = totalRightAnswers;
 }
 
 function ueber() {
@@ -49,6 +58,11 @@ function back() {
     document.getElementById("back-button").style.visibility = "hidden";
 }
 
+function backToMainmenu() {
+    document.getElementById("game-over-summary").style.visibility = "hidden";
+    document.getElementById("menu").style.visibility = "visible";
+}
+
 function* questionGen(questions) {
     for (const question of questions) {
         yield question;
@@ -60,6 +74,7 @@ function closeQuestions() {
     document.getElementById("tippingPoints").classList.remove("fade-out");
     document.getElementById("question-summary").style.visibility = "hidden";
     totalRightAnswers += currentRightAnswers;
+    totalFinishedRegions++;
 }
 
 function openQuestions(tippingPointId) {
@@ -101,13 +116,13 @@ function nextQuestion() {
     document.getElementById("tippingPoint").innerHTML = currentTheme;
     let img = document.getElementById("question-img");
     let tippingPointObj = tippingPoints.find(tp => tp.desc === currentTheme);
-    img.src = `assets/${tippingPointObj.img}`;
     let question = document.getElementById("question");
     let answerContainer = document.getElementById("answer-container");
     let answersRand = questionObj.answers.sort(() => Math.random() - 0.5);
     let nrElement = document.getElementById("question-nr");
     let nr = questionNr++;
 
+    img.src = `assets/${tippingPointObj.img}`;
     nrElement.innerHTML = "Frage " + nr + "/" + currentTippingPoint.questions.length;
     question.innerHTML = questionObj.question;
     answerContainer.innerHTML = "";
@@ -120,7 +135,7 @@ function nextQuestion() {
         answerContainer.appendChild(node);
     }
     document.getElementById("continue-button").style.visibility = "hidden";
-    IS_ANSWER_SELECTED = false;
+    isAnswerSelected = false;
 }
 
 function showQuestionResults() {
@@ -146,7 +161,7 @@ function showQuestionResults() {
 }
 
 function handleAnswer(mouseEvent) {
-    if (IS_ANSWER_SELECTED) { return; }
+    if (isAnswerSelected) { return; }
     let answerContainer = document.getElementById("answer-container");
     let targetEle = mouseEvent.target;
     let rightAnswer = currentQuestion.answers.find((answer) => answer.correct === true).value;
@@ -166,5 +181,5 @@ function handleAnswer(mouseEvent) {
         }
     }
     document.getElementById("continue-button").style.visibility = "visible";
-    IS_ANSWER_SELECTED = true;
+    isAnswerSelected = true;
 }

@@ -90,6 +90,7 @@ body {
 
 .fade-out {
     opacity: 0;
+    pointer-events: none;
     transition: opacity 1s ease-out;
 }
 
