@@ -30,7 +30,7 @@ function newGame() {
     let thermometerInterval = setInterval(() => {
         thermometerBar.style.height = barHeight + "px";
         // game is gonna be 15 min long with a val of 0.2
-        barHeight += 1 * timeFactor;
+        barHeight += 0.2 * timeFactor;
         if (barHeight >= 207 || totalFinishedRegions === 10) { // end of game
             clearInterval(thermometerInterval);
             gameOver();
