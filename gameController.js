@@ -11,8 +11,13 @@ let totalRightAnswers;
 let timeFactor;
 let totalFinishedRegions;
 
-function newGame() {
+function openDescription() {
+    document.getElementById("game-description").style.visibility = "visible";
     document.getElementById("menu").style.visibility = "hidden";
+}
+
+function newGame() {
+    document.getElementById("game-description").style.visibility = "hidden";
     document.getElementById("tippingPoints").style.visibility = "visible";
     document.getElementById("tippingPoints").classList.remove("fade-out");
     document.getElementById("thermometer").style.visibility = "visible";

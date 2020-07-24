@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>climate quiz</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/thermometer.svg">
 </head>
 
 <body>
@@ -63,7 +64,7 @@
 
 
     <div id="menu" class="centered-card-container">
-        <div id="new-game" class="menu-point button" onclick="newGame()">
+        <div id="new-game" class="menu-point button" onclick="openDescription()">
             Neues Spiel
         </div>
         <div id="about" class="menu-point button" onclick="ueber()">
@@ -110,6 +111,18 @@
       <div>
         <p><span id="total-right-answers">4</span>/28 Fragen Richtig Beantwortet</p>
         <div class="button" onclick="backToMainmenu()">zurück zum Haupmenü</div>
+      </div>
+    </div>
+
+    <div id="game-description" class="centered-card-container">
+      <img src="assets/thermometer.svg" alt="Thermometer">
+      <div class="content">
+        <p>
+          In diesem Spiel hast du die Möglichkeit dein Wissen zu Kippelementen im Erdklimasystem unter Beweis zu stellen!<br>
+          Doch sei gewarnt, immer wenn du eine Frage falsch beantwortest steigt das Erdklima um 10% schneller.<br>
+          Wenn das Thermometer voll ist, ist das Spiel zu ende.
+        </p>
+        <div class="button" onclick="newGame()">Start!</div>
       </div>
     </div>
     
