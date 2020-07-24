@@ -589,7 +589,7 @@ let tippingPoints = [
         ]
     },
     {
-        id: "tipping-point-10",
+        id: "tippingPoint-10",
         desc: "Auftauen der Permafrostböden",
         img: "permafrost.jpg",
         sources: ["https://wiki.bildungsserver.de/klimawandel/index.php/Permafrost"],
