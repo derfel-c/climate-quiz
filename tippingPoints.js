@@ -573,7 +573,7 @@ let tippingPoints = [
                 question: "Warum wird im Zusammenhang mit der globalen Erwärmung oft die 1,5° Marke genannt?",
                 answers: [
                     {
-                        value: "Das Risiko, Kippelemente und unkontrollierbare Kettenreaktionen auszulösen, ist bei einer Erwärmung um 1,5 °C deutlich geringer.",
+                        value: "Das Risiko, Kippelemente und unkontrollierbare Kettenreaktionen auszulösen, ist bei einer Erwärmung von unter 1,5 °C deutlich geringer.",
                         correct: true
                     },
                     {
