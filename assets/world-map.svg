@@ -295,7 +295,7 @@
        ry="15.656479"
        rx="14.488557"
        opacity="0.6"
-       onclick="openQuestions('tippingPoint-9')" />
+       onclick="openQuestions('bonus')" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:363.045;fill:#000000;fill-opacity:1;stroke:none"
@@ -315,7 +315,7 @@
        ry="20.643442"
        rx="19.10351"
        opacity="0.6"
-       onclick="openQuestions('tippingPoint-9')" />
+       onclick="openQuestions('tippingPoint-10')" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;inline-size:363.045;fill:#000000;fill-opacity:1;stroke:none"

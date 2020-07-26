@@ -38,11 +38,11 @@
     <text id="text38-7-9-2-3" x="2273.624" y="107.032" fill="#000" fill-opacity="1" stroke="none" font-family="sans-serif" font-size="40" font-style="normal" font-weight="400" style="line-height:1.25;white-space:pre;inline-size:363.045" transform="translate(-1501.646 412.725)" xml:space="preserve">
       <tspan x="2273.624" y="107.032"><tspan>Rückgang </tspan></tspan><tspan x="2273.624" y="157.032"><tspan>borealer Wälder</tspan></tspan>
     </text>
-    <rect id="bonus" width="302.317" height="160.804" x="2188.921" y="426.064" fill="#d3d3d3" stroke-width=".753" onclick="openQuestions('tippingPoint-9')" opacity=".6" rx="14.489" ry="15.656"/>
+    <rect id="bonus" width="302.317" height="160.804" x="2188.921" y="426.064" fill="#d3d3d3" stroke-width=".753" onclick="openQuestions('bonus')" opacity=".6" rx="14.489" ry="15.656"/>
     <text id="text38-7-9-2-3-3" x="2273.624" y="107.032" fill="#000" fill-opacity="1" stroke="none" font-family="sans-serif" font-size="40" font-style="normal" font-weight="400" style="line-height:1.25;white-space:pre;inline-size:363.045" transform="translate(-51.432 411.46)" xml:space="preserve">
       <tspan x="2273.624" y="107.032"><tspan>Bonusfrage</tspan></tspan>
     </text>
-    <rect id="tippingPoint-10" width="398.612" height="212.024" x="3304.749" y="217.899" fill="#d3d3d3" stroke-width=".993" onclick="openQuestions('tippingPoint-9')" opacity=".6" rx="19.104" ry="20.643"/>
+    <rect id="tippingPoint-10" width="398.612" height="212.024" x="3304.749" y="217.899" fill="#d3d3d3" stroke-width=".993" onclick="openQuestions('tippingPoint-10')" opacity=".6" rx="19.104" ry="20.643"/>
     <text id="text38-7-9-2-3-30" x="2273.624" y="107.032" fill="#000" fill-opacity="1" stroke="none" font-family="sans-serif" font-size="40" font-style="normal" font-weight="400" style="line-height:1.25;white-space:pre;inline-size:363.045" transform="translate(1072.805 205.588)" xml:space="preserve">
       <tspan x="2273.624" y="107.032"><tspan>Auftauen der </tspan></tspan><tspan x="2273.624" y="157.032"><tspan>Permafrostböden</tspan></tspan>
     </text>
