@@ -60,6 +60,7 @@ function gameOver() {
     if (barHeight >= MAX_THERMOMETER_BAR_HEIGHT || totalRedRegions > 0) {
         outcome.innerHTML = "Game Over";
         outcome.style.color = "rgb(255, 102, 102)";
+        document.getElementById("high-sea-level").style.opacity = "1";
     } else {
         outcome.innerHTML = "Welt gerettet";
         outcome.style.color = "rgb(135, 211, 124)";
@@ -78,9 +79,10 @@ function back() {
     document.getElementById("back-button").style.visibility = "hidden";
 }
 
-function backToMainmenu() {
+function backToMainMenu() {
     document.getElementById("game-over-summary").style.visibility = "hidden";
     document.getElementById("menu").style.visibility = "visible";
+    document.getElementById("high-sea-level").style.opacity = "0";
 }
 
 function* questionGen(questions) {

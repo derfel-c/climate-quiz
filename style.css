@@ -37,6 +37,11 @@ body {
     transition: opacity 1s ease-out;
 }
 
+#high-sea-level {
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
 .centered-card-container {
     position: fixed;
     left: 50%;

@@ -64,7 +64,7 @@ let tippingPoints = [
     {
         id: "tippingPoint-2",
         desc: "Abschmelzen des Grönländischen Eisschildes",
-        img: "placeholder.jpg",
+        img: "ice.jpg",
         sources: [
             "https://de.wikipedia.org/wiki/Gr%C3%B6nl%C3%A4ndischer_Eisschild",
             "https://www.geo.de/reisen/reisequiz/13978-quiz-quiz-was-wissen-sie-ueber-groenland",
