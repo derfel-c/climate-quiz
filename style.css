@@ -192,7 +192,7 @@ body {
 }
 
 #thermometer {
-    visibility: hidden;
+    display: none;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -201,10 +201,29 @@ body {
 
 #thermometer #thermometer-bar {
     cursor: initial;
+    height: 27px;
+    transition: all 1s linear;
+}
+
+.animate-color {
+    animation: animate-color 1s ease-in-out;
+}
+
+@keyframes animate-color {
+    0% {fill: #ff4d4d;}
+    50% {fill: #e60000;}
+    100% {fill: #ff4d4d;}
 }
 
 #game-over-summary {
     visibility: hidden;
+    text-align: center;
+}
+
+#game-over-summary #outcome {
+    font-size: 64px;
+    font-weight: 900;
+    margin-bottom: 1rem;
 }
 
 #game-description {
@@ -213,7 +232,7 @@ body {
 }
 
 #game-description img {
-    height: 218px;
+    height: 266px;
 }
 
 #game-description p {

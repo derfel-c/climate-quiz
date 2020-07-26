@@ -7,34 +7,34 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="thermometer.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   id="svg8"
-   version="1.1"
-   viewBox="0 0 62.560379 239.15131"
+   width="145.21521mm"
    height="239.15131mm"
-   width="62.560379mm">
+   viewBox="0 0 145.21521 239.15131"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="thermometer.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
-     inkscape:window-maximized="1"
-     inkscape:window-y="-8"
-     inkscape:window-x="1912"
-     inkscape:window-height="1017"
-     inkscape:window-width="1920"
-     showgrid="false"
-     inkscape:document-rotation="0"
-     inkscape:current-layer="layer1"
-     inkscape:document-units="mm"
-     inkscape:cy="367.49461"
-     inkscape:cx="-154.31319"
-     inkscape:zoom="0.82"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     borderopacity="1.0"
-     bordercolor="#666666"
+     id="base"
      pagecolor="#ffffff"
-     id="base" />
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.82"
+     inkscape:cx="107.7904"
+     inkscape:cy="470.81609"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -43,41 +43,155 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-71.151523,-57.465742)"
-     id="layer1"
+     inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
-     inkscape:label="Ebene 1">
+     id="layer1"
+     transform="translate(-71.151523,-57.465742)">
     <path
-       transform="scale(0.26458333)"
-       d="m 387.19727,219.69336 c -39.69094,0 -71.64454,33.71268 -71.64454,75.58984 v 604.96875 a 115.71428,122.26415 0 0 0 -37.75781,136.04885 115.71428,122.26415 0 0 0 109.2793,82.2715 115.71428,122.26415 0 0 0 109.37305,-82.1348 A 115.71428,122.26415 0 0 0 458.8418,900.3418 V 295.2832 c 0,-41.87716 -31.95364,-75.58984 -71.64453,-75.58984 z"
+       id="path22"
        style="fill:none;stroke:#000000;stroke-width:5"
-       id="path22" />
+       d="m 387.19727,219.69336 c -39.69094,0 -71.64454,33.71268 -71.64454,75.58984 v 604.96875 a 115.71428,122.26415 0 0 0 -37.75781,136.04885 115.71428,122.26415 0 0 0 109.2793,82.2715 115.71428,122.26415 0 0 0 109.37305,-82.1348 A 115.71428,122.26415 0 0 0 458.8418,900.3418 V 295.2832 c 0,-41.87716 -31.95364,-75.58984 -71.64453,-75.58984 z"
+       transform="scale(0.26458333)" />
     <path
-       sodipodi:open="true"
-       style="fill:#ff3333"
-       id="path22-6"
-       sodipodi:type="arc"
-       sodipodi:cx="102.33293"
-       sodipodi:cy="263.74942"
-       sodipodi:rx="28.086555"
-       sodipodi:ry="29.676361"
-       sodipodi:start="5.3806378"
-       sodipodi:end="5.3800998"
+       d="m 119.73571,240.45621 a 28.086555,29.676361 0 0 1 4.64492,41.67792 28.086555,29.676361 0 0 1 -39.444546,4.91345 28.086555,29.676361 0 0 1 -4.655533,-41.6766 28.086555,29.676361 0 0 1 39.443299,-4.92466"
        sodipodi:arc-type="arc"
-       d="m 119.73571,240.45621 a 28.086555,29.676361 0 0 1 4.64492,41.67792 28.086555,29.676361 0 0 1 -39.444546,4.91345 28.086555,29.676361 0 0 1 -4.655533,-41.6766 28.086555,29.676361 0 0 1 39.443299,-4.92466" />
+       sodipodi:end="5.3800998"
+       sodipodi:start="5.3806378"
+       sodipodi:ry="29.676361"
+       sodipodi:rx="28.086555"
+       sodipodi:cy="263.74942"
+       sodipodi:cx="102.33293"
+       sodipodi:type="arc"
+       id="path22-6"
+       style="fill:#ff4d4d"
+       sodipodi:open="true" />
     <rect
-       transform="scale(-1)"
-       style="fill:#ff3333;stroke-width:0.901104"
-       id="thermometer-bar"
-       width="32.242107"
-       height="207.55789"
-       x="-118.63647"
+       ry="19.095474"
        y="-268.18283"
-       ry="19.095474" />
+       x="-118.63647"
+       height="207.55789"
+       width="32.242107"
+       id="thermometer-bar"
+       style="fill:#ff4d4d;stroke-width:0.901104"
+       transform="scale(-1)" />
+    <rect
+       style="fill:#000000;stroke-width:0.283175"
+       id="rect10-4"
+       width="25.974339"
+       height="9.424799"
+       x="123.42286"
+       y="206.98854"
+       rx="5.0544796"
+       ry="4.7123995" />
+    <rect
+       ry="4.7123995"
+       rx="5.0544796"
+       y="188.47168"
+       x="123.42285"
+       height="9.424799"
+       width="25.974339"
+       id="rect10-4-6"
+       style="fill:#000000;stroke-width:0.283175" />
+    <rect
+       ry="4.7123995"
+       rx="5.0544796"
+       y="169.95485"
+       x="123.42285"
+       height="9.424799"
+       width="25.974339"
+       id="rect10-4-1"
+       style="fill:#000000;stroke-width:0.283175" />
+    <rect
+       style="fill:#000000;stroke-width:0.283175"
+       id="rect10-4-6-3"
+       width="25.974339"
+       height="9.424799"
+       x="123.42283"
+       y="114.4043"
+       rx="5.0544796"
+       ry="4.7123995" />
+    <rect
+       style="fill:#000000;stroke-width:0.283175"
+       id="rect10-4-1-8"
+       width="25.974339"
+       height="9.424799"
+       x="123.42283"
+       y="95.887466"
+       rx="5.0544796"
+       ry="4.7123995" />
+    <rect
+       ry="4.7123995"
+       rx="4.9545894"
+       y="77.370621"
+       x="123.42281"
+       height="9.424799"
+       width="36.013245"
+       id="rect10-4-6-8-0"
+       style="fill:#000000;stroke-width:0.333436" />
+    <rect
+       style="fill:#000000;stroke-width:0.333436"
+       id="rect10-4-6-8-0-1"
+       width="36.013245"
+       height="9.424799"
+       x="123.42284"
+       y="151.43799"
+       rx="4.9545894"
+       ry="4.7123995" />
+    <rect
+       ry="4.7123995"
+       rx="4.9545894"
+       y="225.50537"
+       x="123.42287"
+       height="9.424799"
+       width="36.013245"
+       id="rect10-4-6-8-0-1-9"
+       style="fill:#000000;stroke-width:0.333436" />
+    <rect
+       ry="4.7123995"
+       rx="5.0544796"
+       y="132.92117"
+       x="123.42283"
+       height="9.424799"
+       width="25.974339"
+       id="rect10-4-6-8-00"
+       style="fill:#000000;stroke-width:0.283176" />
+    <text
+       id="text181"
+       y="237.7025"
+       x="160.10503"
+       style="font-style:normal;font-weight:normal;font-size:21.1667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-size:21.1667px;stroke-width:0.264583"
+         y="237.7025"
+         x="160.10503"
+         id="tspan179"
+         sodipodi:role="line">+ 0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:21.1667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="160.23279"
+       y="163.627"
+       id="text181-0"><tspan
+         sodipodi:role="line"
+         id="tspan179-6"
+         x="160.23279"
+         y="163.627"
+         style="font-size:21.1667px;stroke-width:0.264583">+ 1</tspan></text>
+    <text
+       id="text181-0-9"
+       y="88.433861"
+       x="160.06"
+       style="font-style:normal;font-weight:normal;font-size:21.1667px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       xml:space="preserve"><tspan
+         style="font-size:21.1667px;stroke-width:0.264583"
+         y="88.433861"
+         x="160.06"
+         id="tspan179-6-3"
+         sodipodi:role="line">+ 1,5</tspan></text>
   </g>
 </svg>
