@@ -204,6 +204,10 @@ body {
     height: 400px;
 }
 
+#thermometer > rect {
+    cursor: initial!important;
+}
+
 #thermometer #thermometer-bar {
     cursor: initial;
     height: 27px;
