@@ -1,3 +1,6 @@
+let MAX_THERMOMETER_BAR_HEIGHT = 207;
+let MIN_THERMOMETER_BAR_HEIGHT = 27;
+let NR_OF_REGIONS = 11;
 let isAnswerSelected = false;
 let currentQuestionGen;
 let currentTheme;
@@ -10,6 +13,8 @@ let currentTippingPoint;
 let totalRightAnswers;
 let timeFactor;
 let totalFinishedRegions;
+let totalRedRegions;
+let barHeight;
 
 function openDescription() {
     document.getElementById("game-description").style.visibility = "visible";
@@ -20,24 +25,26 @@ function newGame() {
     document.getElementById("game-description").style.visibility = "hidden";
     document.getElementById("tippingPoints").style.visibility = "visible";
     document.getElementById("tippingPoints").classList.remove("fade-out");
-    document.getElementById("thermometer").style.visibility = "visible";
+    document.getElementById("thermometer").style.display = "block";
     totalRightAnswers = 0;
     currentRightAnswers = 0;
     totalFinishedRegions = 0;
+    totalRedRegions = 0;
     timeFactor = 1;
     for (const tippingPoint of tippingPoints) {
         tippingPoint.visited = false;
         document.getElementById(tippingPoint.id).style.fill = "rgba(211,211,211,0.6)";
     }
     let thermometerBar = document.getElementById("thermometer-bar");
-    let barHeight = 27;
+    barHeight = MIN_THERMOMETER_BAR_HEIGHT;
     thermometerBar.style.height = barHeight + "px";
     let thermometerInterval = setInterval(() => {
         thermometerBar.style.height = barHeight + "px";
         // game is gonna be 15 min long with a val of 0.2
         barHeight += 0.2 * timeFactor;
-        if (barHeight >= 207 || totalFinishedRegions === 11) { // end of game
+        if (barHeight >= MAX_THERMOMETER_BAR_HEIGHT || totalFinishedRegions === NR_OF_REGIONS) { // end of game
             clearInterval(thermometerInterval);
+            thermometerBar.style.height = MIN_THERMOMETER_BAR_HEIGHT + "px";
             gameOver();
         }
     }, 1000);
@@ -47,8 +54,17 @@ function gameOver() {
     document.getElementById("game-over-summary").style.visibility = "visible";
     closeQuestions();
     document.getElementById("tippingPoints").classList.add("fade-out");
-    document.getElementById("thermometer").style.visibility = "hidden";
+    document.getElementById("thermometer").style.display = "none";
     document.getElementById("total-right-answers").innerHTML = totalRightAnswers;
+    let outcome = document.getElementById("outcome");
+    if (barHeight >= MAX_THERMOMETER_BAR_HEIGHT || totalRedRegions > 0) {
+        outcome.innerHTML = "Game Over";
+        outcome.style.color = "rgb(255, 102, 102)";
+        document.getElementById("high-sea-level").style.opacity = "1";
+    } else {
+        outcome.innerHTML = "Welt gerettet";
+        outcome.style.color = "rgb(135, 211, 124)";
+    }
 }
 
 function ueber() {
@@ -63,9 +79,10 @@ function back() {
     document.getElementById("back-button").style.visibility = "hidden";
 }
 
-function backToMainmenu() {
+function backToMainMenu() {
     document.getElementById("game-over-summary").style.visibility = "hidden";
     document.getElementById("menu").style.visibility = "visible";
+    document.getElementById("high-sea-level").style.opacity = "0";
 }
 
 function* questionGen(questions) {
@@ -111,6 +128,7 @@ function nextQuestion() {
         // set colour of 'lost' and 'saved' regions
         if (((currentRightAnswers / currentTippingPoint.questions.length) * 100 | 0) <= 33) {
             document.getElementById(currentID).style.fill = "rgba(255, 102, 102, 0.6)";
+            totalRedRegions++;
         }
         else {
             document.getElementById(currentID).style.fill = "rgba(135, 211, 124,0.6)";
@@ -168,6 +186,7 @@ function showQuestionResults() {
 function handleAnswer(mouseEvent) {
     if (isAnswerSelected) { return; }
     let answerContainer = document.getElementById("answer-container");
+    let thermometer = document.getElementsByClassName("thermometer");
     let targetEle = mouseEvent.target;
     let rightAnswer = currentQuestion.answers.find((answer) => answer.correct === true).value;
 
@@ -177,6 +196,10 @@ function handleAnswer(mouseEvent) {
         currentRightAnswers++;
     } else {
         timeFactor += 0.1;
+        for (const ele of thermometer) {
+            ele.classList.add("animate-color");
+            setTimeout(() => ele.classList.remove("animate-color"), 1000);
+        }
     }
     for (const answer of answerContainer.children) {
         if (answer.innerHTML.substring(2).includes(rightAnswer)) {
