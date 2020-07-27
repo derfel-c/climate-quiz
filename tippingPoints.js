@@ -190,7 +190,7 @@ let tippingPoints = [
     {
         id: "tippingPoint-4",
         desc: "Erlahmen der atlantischen thermohalinen Zirkulation",
-        img: "thermohalineZirkulation.jpg",
+        img: "thermohaline_circulation.png",
         sources: [
             "https://de.wikipedia.org/wiki/Thermohaline_Zirkulation"
         ],
